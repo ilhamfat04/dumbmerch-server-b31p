@@ -120,7 +120,7 @@ exports.addProduct = async (req, res) => {
       name: req.body.name,
       desc: req.body.desc,
       price: req.body.price,
-      image: 'image name from cloudinary (result variable) here ...',
+      image: result.public_id,
       qty: req.body.qty,
       idUser: req.user.id,
     };
